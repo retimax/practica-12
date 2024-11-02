@@ -1,95 +1,134 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mr. Robot</title>
-    <link href="css/style.css" rel="stylesheet">
-  </head>
-  <body>
-    <main>    
-      
-      <header>
-        <h1>Mr. Robot</h1>
-      </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mr. Robot</title>
+  <link href="./css/styles.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Mr. Robot</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#inicio">Información general</a></li>
+            <li class="nav-item"><a class="nav-link" href="#sinopsis">Sinopsis</a></li>
+            <li class="nav-item"><a class="nav-link" href="#personajes">Personajes</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-      <section>
-        <p><strong>Año de estreno:</strong> 2015</p>
-        <p><strong>País de origen:</strong> EE.UU</p>
-        <p><strong>Género:</strong> Tecno-thriller</p>
-        <p><strong>Creado por:</strong> Sam Esmail</p>
-      </section>
+  <main class="container my-4">
+    <!-- Información General -->
+    <section id="inicio" class="mb-4">
+      <h2>Información general</h2>
+      <p><strong>Año de estreno:</strong> 2015</p>
+      <p><strong>País de origen:</strong> EE.UU.</p>
+      <p><strong>Género:</strong> Tecno-thriller</p>
+      <p><strong>Creado por:</strong> Sam Esmail</p>
+    </section>
 
-      <section>
-        <h2>Sinopsis</h2>
-        <p>Nuestro protagonista <strong>Elliot Alderson</strong>, un experto en el ámbito de la ciberseguridad vive una vida relativamente normal hasta que unos ciberterroristas se contactan con el y decide formar parte de su <strong>"Movimiento Social"</strong></p>
-      </section>
-    
-      <section>
-        <h2>Numero de temporadas</h2>
-        <ul>
-          <li><strong>Temporada 1:</strong> 10 episodios</li>
-          <li><strong>Temporada 2:</strong> 12 episodios</li>
-          <li><strong>Temporada 3:</strong> 10 episodios</li>
-          <li><strong>Temporada 4:</strong> 13 episodios</li>
-        </ul>
-      </section>
+    <!-- Sinopsis -->
+    <section id="sinopsis" class="mb-4">
+      <h2>Sinopsis</h2>
+      <p>El protagonista <strong>Elliot Alderson</strong>, experto en ciberseguridad, vive una vida relativamente normal hasta que unos ciberterroristas lo contactan, y él decide unirse a su <strong>"Movimiento Social"</strong>.</p>
+    </section>
 
-      <section>
-        <h2>Poster promocional</h2>
-        <img src="./img/poster.png" alt="Poster promocional de la serie Mr. Robot" width="230">
-      </section>
+    <!-- Número de Temporadas -->
+    <section id="temporadas" class="mb-4">
+      <h2>Número de temporadas</h2>
+      <ul>
+        <li><strong>Temporada 1:</strong> 10 episodios</li>
+        <li><strong>Temporada 2:</strong> 12 episodios</li>
+        <li><strong>Temporada 3:</strong> 10 episodios</li>
+        <li><strong>Temporada 4:</strong> 13 episodios</li>
+      </ul>
+    </section>
 
-      <section>
-        <h2>Personajes principales</h2>
-        <table>
+    <!-- Poster Promocional -->
+    <section id="poster" class="text-center mb-4">
+      <h2>Póster promocional</h2>
+      <img src="./img/poster.png" alt="Póster promocional de la serie Mr. Robot" width="230">
+    </section>
 
-          <thead>
+    <!-- Personajes Principales -->
+    <section id="personajes" class="mb-4">
+      <h2>Personajes principales</h2>
+      <div class="table-responsive">
+        <table class="table table-bordered">
+          <thead class="table-dark">
             <tr>
               <th>Nombre</th>
               <th>Foto</th>
               <th>Descripción</th>
             </tr>
           </thead>
-
           <tbody>
             <tr>
               <td>Elliot Alderson</td>
-              <td><img src="./img/elliot.png" alt="Foto del personaje principal Elliot Alderson con un sueter con capucha" width="100"></td>
-              <td>Es una persona introvertida con multiples trastornos mentales al mismo tiempo que es un prodigio de las computadoras.</td>
+              <td><img src="./img/elliot.png" alt="Elliot Alderson con un suéter con capucha" width="100"></td>
+              <td>Introvertido con múltiples trastornos mentales y prodigio de las computadoras.</td>
             </tr>
-
             <tr>
               <td>Tyrell Wellick</td>
-              <td><img src="./img/tyrell.png" alt="Foto de Tyrell Wellick, alto rango de E-Corp, vestido como un hombre de negocios" width="100"></td>
-              <td>Es un alto rango de la empresa dueña del mundo en Mr. Robot, el cual debido a su ambición tiene actidudes cuestionables dentro de la serie.</td>
+              <td><img src="./img/tyrell.png" alt="Tyrell Wellick en traje de negocios" width="100"></td>
+              <td>Un ambicioso alto ejecutivo de E-Corp con actitudes cuestionables.</td>
             </tr>
-
             <tr>
-              <td>Darlene ?</td>
-              <td><img src="./img/darlene.png" alt="Foto de Darlene, una mujer con un aspecto despreocupado y alternativo" width="100"></td>
-              <td>Sin spoiler, es una pieza fundamental dentro de la organización ciberterrorista de la cual Elliot decide formar parte.</td>
+              <td>Darlene</td>
+              <td><img src="./img/darlene.png" alt="Darlene con aspecto alternativo" width="100"></td>
+              <td>Pieza fundamental en la organización ciberterrorista a la que Elliot se une.</td>
             </tr>
           </tbody>
-
         </table>
+      </div>
+    </section>
 
-      </section>
+    <!-- Escena Memorable -->
+    <section id="escena" class="mb-4 text-center">
+      <h2>Escena Memorable</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/ajNvgZAI1uc?si=54rwseGvQ3VdLHQd" title="Escena memorable de Mr. Robot" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </section>
+  </main>
 
-      <section>
-        <h3>Redes Sociales</h3>
-        <ul>
-          <li><a href="https://www.instagram.com/whoismrrobot/">Instagram</a></li>
-          <li><a href="https://www.facebook.com/WhoIsMrRobot/">Facebook</a></li>
-          <li><a href="https://www.youtube.com/@MrRobot">Youtube</a></li>
-        </ul>
-      </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-      <section>
-        <h2>Escena Memorable</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/ajNvgZAI1uc?si=54rwseGvQ3VdLHQd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </section>
-
-    </main>
-  </body>
+      <!-- Sección de Redes Sociales -->
+  <section id="redes" class="text-center my-4">
+    <h3>Síguenos en Redes Sociales</h3>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-auto">
+          <a href="https://www.instagram.com/whoismrrobot/" target="_blank" class="text-decoration-none text-dark">
+            <i class="fab fa-instagram fa-2x"></i>
+            <p>Instagram</p>
+          </a>
+        </div>
+        <div class="col-auto">
+          <a href="https://www.facebook.com/WhoIsMrRobot/" target="_blank" class="text-decoration-none text-dark">
+            <i class="fab fa-facebook fa-2x"></i>
+            <p>Facebook</p>
+          </a>
+        </div>
+        <div class="col-auto">
+          <a href="https://www.youtube.com/@MrRobot" target="_blank" class="text-decoration-none text-dark">
+            <i class="fab fa-youtube fa-2x"></i>
+            <p>YouTube</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
 </html>
+
